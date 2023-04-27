@@ -1,0 +1,29 @@
+version: 0.2
+env:
+  shell: bash
+  parameter-store:
+    REACT_APP_URL: /inbiot/global/front-domain-name
+  variables:
+    NODE_PATH: '/src'
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+    commands:
+      - echo "Install node 18"
+      - n 18
+  pre_build:
+    commands:
+      - echo "Removing old node_modules"
+      - rm -rf node_modules
+
+      - echo "Installing dependencies"
+      - npm install --legacy-peer-deps
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - echo "Version to deploy is $EXECUTION_ID"
+      - aws s3 cp --recursive ./build s3://$BUCKET_NAME
