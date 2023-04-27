@@ -1,8 +1,6 @@
 version: 0.2
 env:
   shell: bash
-  parameter-store:
-    REACT_APP_URL: /inbiot/global/front-domain-name
   variables:
     NODE_PATH: '/src'
 
