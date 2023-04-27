@@ -1,138 +1,114 @@
 export const Data = {
   profile: {
-    name: "Matias Lagos",
-    ocupation: "FullStack Software Developer",
-    location: "Santiago, Chile",
-    email: "lagos.matias25@gmail.com",
-    telephone: "+56 971999705",
-    image: "images/90208122_10222269974249078_3631065450546200576_n.jpg",
+    name: "Iñigo Aranguren",
+    ocupation: "Software Product Lead",
+    location: "Pamplona, Spain",
+    email: "reachme.iaranguren@gmail.com",
+    telephone: "+34 606324446",
+    image: "images/me.png",
   },
   aboutMe: {
-    label: "Perfil",
+    label: "Profile",
     description:
-      "Analista Programador, capacitado para desarrollar aplicaciones informáticas en diversas tecnologías y múltiples lenguajes de programación, aplicando metodologías ágiles de desarrollo, incluyendo identificación de necesidades y diseños de sistemas basados en modelos de desarrollo.",
+    "As a telecommunications engineer with a strong background in software development, I am deeply enthusiastic about all things tech and am constantly seeking out opportunities to broaden my knowledge and hone my skills. I also thrive on collaboration and value the chance to work alongside other talented professionals to achieve shared goals."
   },
   skills: {
-    technicalLabel: "Tecnologías",
+    technicalLabel: "Technologies",
     softLabel: "Skills",
     technicalSkills: [
-      "Angular",
+      "AWS",
+      "Serverless",
+      "NoSQL",
       "React",
-      "Java",
-      "Nodejs",
-      "Spring Boot",
-      "Nestjs",
-      "APIM",
-      "SQL",
+      "Redux",
+      "HTML/CSS",
+      "JavaScript",
+      "Node.js",
+      "Python",
+      "Arduino",
+      "PlatformIO",
+      "AWS IoT Core",
+      "React Native",
+      "ClickUp",
+      "Notion",
+      "Slack",
+      "Figma",
       "Git",
     ],
     softSkills: [
-      "Capacidad de análisis",
-      "Resolución de Problemas",
-      "Pensamiento Crítico",
-      "Trabajo en equipo",
-      "Comunicación",
-      "Proactividad",
-      "Creatividad",
-      "Autodidacta",
-      "Mentoria",
+      "Cloud Development (AWS, Serverless, NoSQL, CI/CD)",
+      "Front-end Development (React JS, Redux)",
+      "Mobile Development (React Native)",
+      "Back-end Development (Node JS, Python)",
+      "Product Development",
+      "SCRUM",
+      "Firmware Development (Arduino, PlatformIO, ESP32)",
+      "English (C1 Cambridge)",
+      "Spanish (Native)",
+      "Basque (Basic)"
     ],
   },
   socialMedia: {
     label: "SOCIAL",
     social: [
       {
-        label: "Maaato",
+        label: "Iñigo Aranguren",
         name: "linkedin",
-        url: "https://www.linkedin.com/in/matias-alfonso-lagos-gajardo",
+        url: "https://www.linkedin.com/in/iñigo-aranguren/",
         className: "bxl-linkedin-square",
       },
       {
-        label: "Maaato",
+        label: "arangu97",
         name: "github",
-        url: "https://github.com/Maaato",
+        url: "https://github.com/arangu97",
         className: "bxl-github",
-      },
-      {
-        label: "Maaato",
-        name: "twiiter",
-        url: "https://twitter.com/I_Maaato",
-        className: "bxl-twitter",
-      },
+      }
     ],
   },
   experience: {
     works: [
       {
-        title: "FULL-STACK DEVELOPER",
-        period: "Oct. 2021 - Actualidad",
-        company: "Banco Ripley",
+        title: "PRODUCT MANAGER",
+        period: "Jan. 2022 - Present",
+        company: "inBiot Monitoring SL",
         description: [
-          "Desarrollo y mejora continua de microservicios REST en Java y Node.js(JS/TS).",
-          "Desarrollo y mejora continua de PWA en las tecnologías Angular, Ionic y Cordova.",
-          "Canalización CI/CD con Bitbucket, Jenkins y AWS como infraestructura."
+          "Product development tasks to fullfill the requirements of the client in time and quality.",
+          "Management of firmware, software and UX design developers.",
+          "Implementation of SCRUM methodology for project management."
         ],
       },
       {
         title: "FULL-STACK DEVELOPER",
-        period: "Oct. 2019 - Oct. 2021",
-        company: "Altiuz",
+        period: "Sept. 2019 - Jan. 2022",
+        company: "inBiot Monitoring SL",
         description: [
-          "Desarrollo de Web Services REST en Java y Nodejs(JS/TS) acompañado de diferentes motores de BD como Mysql, Oracle, MariaDB, MongoDB e IBM API Connect y 3scale como API Gateway.",
-          "Desarrollo de Frontend y Mobile con tecnologías como Angular, React, React Native, Ionic y Cordova.",
+          "Web platform front-end development with React JS.",
+          "Serverless back-end development using Node JS.",
+          "Cloud infrastructure development on Amazon Web Services.",
+          "Developing native mobile applications with React Native.",
+          "User interface design using Figma",
+          "Firmware development for IoT device microcontrollers with Arduino"
         ],
       },
     ],
     academic: [
       {
-        career: "Técnico de Nivel Superior Analista Programador",
-        date: "2019",
-        institution: "Universidad Tecnológica de Chile INACAP",
-      },
-    ],
-    proyects: [
-      {
-        name: "Onboarding Digital",
-        company: "Banco de Chile",
-        period: "Nov. 2019 - Ene. 2020",
-        description: [
-          "Control, desarrollo, securitización y despliegue de APIs en plataforma IBM API Connect.",
-        ],
+        career: "Master's Degree in Telecommunication Technologies Engineering",
+        date: "Sept 2019 - Jun 2021",
+        institution: "Public University of Navarra (Pamplona, ES)",
+        description: "Completing the Master's in Telecommunications has been a catalyst for my interest in full-stack development and IoT networks. During my internship, I had the opportunity to be immersed in a working environment related to these topics, which allowed me to apply my newly acquired knowledge from the Master's degree and have a deeper understanding of these technologies. As a result, I have realised that I have a great passion for these fields and wish to continue to develop in them. The Masters has provided me with the skills and knowledge necessary to succeed in this field and has helped me find my way to an exciting career in software development and telecommunication networks."
       },
       {
-        name: "Captación Digital",
-        company: "Banco Ripley",
-        period: "Ene. 2020 - Feb. 2020",
-        description: [
-          "Control, desarrollo y securitización de APIs en plataforma IBM API Connect.",
-          "Desarrollo frontend en Angular para el consumo de Web Services SOAP/REST apuntando a ambientes DEV/PRE-PROD/PROD como simulación.",
-        ],
+        career: "Erasmus Program",
+        date: "Jan 2019 - Jun 2019",
+        institution: "Politechnika Warszawska (Warsaw, PL)",
+        description: "During my Erasmus stay in Warsaw I carried out my final thesis in which I was directly involved in a project at the Politechnika Warszawska University. The project developed LoRa communication between IoT devices that measured certain compounds in the city's sewage system and sent the data via a LoRaWAN network to a server in the university's cloud. This experience allowed me to develop my microcontroller programming skills as well as enhanced my understanding of IoT networks for integration with cloud services."
       },
       {
-        name: "Agendamiento Remoto",
-        company: "Gobierno de Chile",
-        period: "Mar. 2020 - May. 2020",
-        description: [
-          "Desarrollo frontend y mobile con las tecnologias de Angular 6 e Ionic 4 para el agendamiento de horas en centros a lo largo de todo Chile.",
-        ],
-      },
-      {
-        name: "Altiuz Report Dynamic",
-        company: "Altiuz",
-        period: "Jun. 2020 - Jul. 2020",
-        description: [
-          "Desarrollo de servicio Java para la generación unitaria de documentos, sin la necesidad de tener almacenada la información del mismo en una fuente de datos.",
-        ],
-      },
-      {
-        name: "Desarrollos Tigo",
-        company: "Computec S.A.S",
-        period: "Ago. 2020 - Dic 2020",
-        description: [
-          "Desarrollo Java/Spring Boot de Web Service API REST para consulta y descarga de documentos almacenados en repositorios IBM CMOD.",
-          "Desarrollo Java CRON para transferencia de documentos XML hacia servidor SFTP.",
-          "Desarrollo Java CRON para carga de documentos PDFs hacia Azure Blob Storage.",
-        ],
+        career: "Degree in Telecommunication Technologies Engineering",
+        date: "Sept 2015 - Jun 2019",
+        institution: "Public University of Navarra (Pamplona, ES)",
+        description: "As a telecommunications engineer specialising in telematics, I have advanced skills in telecommunications networks, network design and management, network security, software and application development, troubleshooting, project management skills, and business and management knowledge. These skills enable me to design, implement and manage high quality telecommunications networks, solve telematics and data communications problems, and improve business efficiency and competitiveness."
       },
     ],
   },

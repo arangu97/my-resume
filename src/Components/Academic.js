@@ -3,7 +3,7 @@ import React from "react";
 export const Academic = ({ academic }) => {
   return (
     <section className="academic-experience section" id="education">
-      <h2 className="section-title">Educación</h2>
+      <h2 className="section-title">Education</h2>
       <div className="education__container bd-grid">
         {academic.map((academy) => (
           <Academy key={academy.institution} {...academy} />
@@ -13,7 +13,7 @@ export const Academic = ({ academic }) => {
   );
 };
 
-const Academy = ({ career, date, institution }) => {
+const Academy = ({ career, date, institution, description }) => {
   return (
     <div className="education__content">
       <div className="education__time">
@@ -24,6 +24,7 @@ const Academy = ({ career, date, institution }) => {
         <h3 className="education__title">{career}</h3>
         <span className="education__year">{date}</span>
         <span className="education__studies">{institution}</span>
+        <span className="education__description">{description}</span>
       </div>
     </div>
   );

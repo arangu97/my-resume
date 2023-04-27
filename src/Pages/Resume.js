@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from 'react-helmet'
 
 import { Profile } from "../Components/Profile";
 import { Academic } from "../Components/Academic";
 import { Skills } from "../Components/Skills";
-import { Proyects } from "../Components/Proyects";
 import { Works } from "../Components/Works";
-import { SocialMedia } from "../Components/SocialMedia";
 import { AboutMe } from "../Components/AboutMe";
 import { Menu } from "../Components/Menu";
 import { SEO } from "../Components/SEO";
@@ -28,20 +27,21 @@ export const Resume = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Iñigo Aranguren - Software Product Lead - My Resume</title>
+      </Helmet>
       <SEO  {...profile} {...aboutMe}/>
       {!matches && <Menu {...menuSchema} />}
       <main className="l-main bd-container" id="bd-container">
         <div className="resume" id="area-cv">
           <div className="resume__left">
-            <Profile {...profile} />
+            <Profile {...profile} socialMedia={socialMedia} />
             <AboutMe {...aboutMe} />
             <Skills {...skills} />
-            <SocialMedia {...socialMedia} />
           </div>
           <div className="resume__right">
             <Works {...experience} />
             <Academic {...experience} />
-            <Proyects {...experience} />
           </div>
         </div>
       </main>

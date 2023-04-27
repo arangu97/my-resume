@@ -1,9 +1,8 @@
 import React from "react";
 
-export const SocialMedia = ({ label, social }) => {
+export const SocialMedia = ({ social }) => {
   return (
     <section className="social section">
-      <h2 className="section-title">{label}</h2>
       <div className="social__container bd-grid">
         {social.map((social) => <Social key={social.name} {...social} />)}
       </div>

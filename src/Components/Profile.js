@@ -1,5 +1,6 @@
 import React from "react";
 import { Options } from "./Options";
+import { SocialMedia } from "../Components/SocialMedia";
 
 export const Profile = ({
   name,
@@ -8,6 +9,7 @@ export const Profile = ({
   email,
   telephone,
   image,
+  socialMedia
 }) => {
   return (
     <section className="home" id="home">
@@ -31,6 +33,8 @@ export const Profile = ({
             <i className="bx bx-phone home__icon" /> {telephone}
           </span>
         </div>
+        <SocialMedia {...socialMedia} />
+
       </div>
       <Options />
     </section>

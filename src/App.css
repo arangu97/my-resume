@@ -356,7 +356,11 @@ body.dark-theme {
 }
 
 .education__studies,
-.experience__company,
+.experience__company {
+  font-style: italic;
+  color: #7b88a1;
+}
+
 .experience__proyect {
   font-size: var(--small-font-size);
   color: var(--title-color);
@@ -370,7 +374,13 @@ body.dark-theme {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.skills_data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .skills__name {
+  flex: 1;
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-1);
