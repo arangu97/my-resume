@@ -4,7 +4,7 @@ import { SocialMedia } from "../Components/SocialMedia";
 
 export const Profile = ({
   name,
-  ocupation,
+  occupation,
   location,
   email,
   telephone,
@@ -19,7 +19,7 @@ export const Profile = ({
           <h1 className="home__title">
             <strong>{name}</strong>
           </h1>
-          <h3 className="home__profession">{ocupation}</h3>
+          <h3 className="home__profession">{occupation}</h3>
         </div>
 
         <div className="home__address bd-grid">

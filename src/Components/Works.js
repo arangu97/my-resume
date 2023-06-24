@@ -1,9 +1,12 @@
 import React from "react";
 import { Description } from "./Description";
+import { useTranslation } from 'react-i18next';
+
 export const Works = ({ works }) => {
+  const { t } = useTranslation();
   return (
     <section className="work-experience section" id="experience">
-      <h2 className="section-title">Work Experience</h2>
+      <h2 className="section-title">{t('header.works')}</h2>
       <div className="experience__container bd-grid">
         {works.map((work) => (
           <Work key={work.company} {...work} />

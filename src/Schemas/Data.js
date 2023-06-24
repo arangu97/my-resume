@@ -13,29 +13,18 @@ export const Data = {
     "As a telecommunications engineer with a strong background in software development, I am deeply enthusiastic about all things tech and am constantly seeking out opportunities to broaden my knowledge and hone my skills. I also thrive on collaboration and value the chance to work alongside other talented professionals to achieve shared goals."
   },
   skills: {
-    technicalLabel: "Technologies",
-    softLabel: "Skills",
+    technicalLabel: "Technical skills",
+    softLabel: "Other skills",
     technicalSkills: [
-      "AWS",
-      "Serverless",
-      "NoSQL",
-      "React",
-      "Redux",
-      "HTML/CSS",
-      "JavaScript",
-      "Node.js",
-      "Python",
-      "Arduino",
-      "PlatformIO",
-      "AWS IoT Core",
-      "React Native",
-      "ClickUp",
-      "Notion",
-      "Slack",
-      "Figma",
-      "Git",
+      "Desarrollo web (HTML, CSS, JavaScript, React, Redux, Node.js)",
+      "Cloud computing y servicios (AWS, Serverless, IoT Core)",
+      "Base de datos y almacenamiento (NoSQL)",
+      "Desarrollo de aplicaciones móviles (React Native)",
+      "Herramientas de gestión de proyectos (ClickUp, Notion, Slack, Git)",
+      "Diseño de interfaces de usuario (Figma)",
+      "Lenguajes de programación (Python, Arduino, PlatformIO)"
     ],
-    softSkills: [
+    otherSkills: [
       "Cloud Development (AWS, Serverless, NoSQL, CI/CD)",
       "Front-end Development (React JS, Redux)",
       "Mobile Development (React Native)",
@@ -72,9 +61,12 @@ export const Data = {
         period: "Jan. 2022 - Present",
         company: "inBiot Monitoring SL",
         description: [
-          "Product development tasks to fullfill the requirements of the client in time and quality.",
-          "Management of firmware, software and UX design developers.",
-          "Implementation of SCRUM methodology for project management."
+          "Experiencia en el ciclo completo de desarrollo de productos, desde la concepción hasta el lanzamiento y la mejora continua.",
+          "Habilidad para realizar investigaciones de mercado, entender necesidades del cliente e identificar oportunidades de mercado.",
+          "Experiencia exitosa en la gestión y coordinación de equipos de desarrolladores de software, firmware y diseñadores, asegurando una colaboración eficiente y alineada con los objetivos del proyecto.",
+          "Conocimiento en la optimización de la experiencia del usuario, realización de pruebas de usabilidad y recopilación de feedback para mejorar la usabilidad y satisfacción del producto.",
+          "Impulso de relaciones sólidas con empresas del sector, logrando alineamiento de objetivos y colaboraciones fructíferas.",
+          "Familiaridad con herramientas populares de gestión de productos, como ClickUp o Trello para implementación de metodologías SCRUM.",
         ],
       },
       {
@@ -82,12 +74,12 @@ export const Data = {
         period: "Sept. 2019 - Jan. 2022",
         company: "inBiot Monitoring SL",
         description: [
-          "Web platform front-end development with React JS.",
-          "Serverless back-end development using Node JS.",
-          "Cloud infrastructure development on Amazon Web Services.",
-          "Developing native mobile applications with React Native.",
-          "User interface design using Figma",
-          "Firmware development for IoT device microcontrollers with Arduino"
+          "Desarrollo de front-end de plataformas web con React JS.",
+          "Desarrollo de back-end serverless utilizando Node JS.",
+          "Desarrollo de infraestructura en la nube en Amazon Web Services.",
+          "Desarrollo de aplicaciones móviles nativas con React Native.",
+          "Diseño de interfaces de usuario utilizando Figma.",
+          "Desarrollo de firmware para microcontroladores de dispositivos IoT con Arduino."
         ],
       },
     ],
