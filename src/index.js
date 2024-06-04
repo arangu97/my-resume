@@ -19,7 +19,7 @@ i18n
       en: common_en,
       es: common_es
     },
-    lng: "es",
+    lng: "en",
     fallbackLng: "en",
 
     interpolation: {

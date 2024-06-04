@@ -1,5 +1,7 @@
 import React from "react";
 
 export const Description = ({ desc }) => (
-  <p className="experience__description">- {desc}</p>
+  <li className="skills__name">
+    <span className="skills__circle" /> {desc}
+  </li>
 );

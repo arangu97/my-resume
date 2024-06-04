@@ -1,32 +1,32 @@
 import React from "react";
 
 export const Skills = ({
-  technicalLabel,
-  softLabel,
-  technicalSkills,
-  otherSkills,
+  label,
+  skills,
 }) => {
+  console.log(skills)
   return (
     <>
-      <section className="technical-skills section" id="skills">
-        <h2 className="section-title">{technicalLabel}</h2>
+      <section className="skills section" id="skills">
+        <h2 className="section-title">{label}</h2>
         <div className="skills__content bd-grid">
-          <ul className="skills__data">
-            {technicalSkills.map((skill) => <Skill key={skill} skill={skill} />)}
-          </ul>
-        </div>
-      </section>
-      <section className="soft-skills section">
-        <h2 className="section-title">{softLabel}</h2>
-        <div className="skills__content bd-grid">
-          <ul className="skills__data">
-            {otherSkills.map((skill) => <Skill key={skill} skill={skill} />)}
-          </ul>
+          <div className="skills__data">
+            {skills.map((skill) => <SkillGroup key={skill} skillGroup={skill} />)}
+          </div>
         </div>
       </section>
     </>
   );
 };
+
+const SkillGroup = ({ skillGroup }) => (
+  <div className="skills__group">
+    <b className="skills_group_title">{skillGroup.title}</b>
+    <ul className="skills__group_items">
+      {skillGroup.items.map((skill) => <Skill key={skill} skill={skill} />)}
+    </ul>
+  </div>
+);
 
 const Skill = ({ skill }) => (
   <li className="skills__name">

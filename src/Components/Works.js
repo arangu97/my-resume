@@ -28,7 +28,9 @@ const Work = ({ title, period, company, description }) => {
         <span className="experience__company">
           {period} | {company}
         </span>
-        {description.map((desc,i) => <Description  key={i} desc={desc}/>)}
+        <ul className="skills__group_items">
+          {description.map((desc,i) => <Description  key={i} desc={desc}/>)}
+        </ul>
       </div>
     </div>
   );
