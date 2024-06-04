@@ -5,6 +5,7 @@ import JsPDF from 'jspdf';
 import * as htmlToImage from "html-to-image";
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
+import { GB, ES } from 'country-flag-icons/react/3x2'
 
 export const Options = () => {
   var { lsTheme, lsIcon, lsSnow } = "";
@@ -38,35 +39,28 @@ export const Options = () => {
     })
   }
 
-  const downloadResume = () => {
-    htmlToImage.toJpeg(document.getElementById("area-cv")).then(function (dataUrl) {
-      const pdf = new JsPDF('portrait','mm',[language === 'es' ? 2012 : 1796, 968]);
+  // const downloadResume = () => {
+  //   htmlToImage.toJpeg(document.getElementById("area-cv")).then(function (dataUrl) {
+  //     const pdf = new JsPDF('portrait','mm',[language === 'es' ? 2012 : 1480, 968]);
     
-      // Calculate the aspect ratio to maintain the image's dimensions
-      const imgWidth = pdf.internal.pageSize.getWidth();
-      const imgHeight = document.getElementById("area-cv").offsetHeight * imgWidth / document.getElementById("area-cv").offsetWidth;
+  //     // Calculate the aspect ratio to maintain the image's dimensions
+  //     const imgWidth = pdf.internal.pageSize.getWidth();
+  //     const imgHeight = document.getElementById("area-cv").offsetHeight * imgWidth / document.getElementById("area-cv").offsetWidth;
 
-      pdf.addImage(dataUrl, 'JPEG', 0, 0, imgWidth, imgHeight);
-      pdf.save('CV_Iñigo_Aranguren.pdf');
-    })
-  }
-
+  //     pdf.addImage(dataUrl, 'JPEG', 0, 0, imgWidth, imgHeight);
+  //     pdf.save('CV_Aranguren_Inigo.pdf');
+  //   })
+  // }
+  
   return (
     <div className="home__options">
-      <i
-        className="bx enable-snow"
-        id="lang-button"
-        onClick={changeLang}
-      >
-        {language === 'es' ? 'EN' : 'ES'}
-      </i>
+      {language === 'en' && 
+        <ES title="Spanish" className="bx enable-snow icon_flag" onClick={changeLang}/>
+      }
+      {language === 'es' &&
+        <GB title="English" className="bx enable-snow icon_flag"  onClick={changeLang}/>
+      }
       <SnowEffect />
-      <i
-        className={`bx bxs-file-pdf change-theme`}
-        title="Download PDF"
-        id="download-pdf-button"
-        onClick={downloadResume}
-      />
     </div>
   );
 };

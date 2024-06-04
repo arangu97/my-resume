@@ -10,7 +10,6 @@ import { AboutMe } from "../Components/AboutMe";
 import { Menu } from "../Components/Menu";
 import { SEO } from "../Components/SEO";
 
-// import { Data as dataSchema } from "../Schemas/Data";
 import { Menu as menuSchema } from "../Schemas/Menu";
 
 export const Resume = () => {
@@ -32,7 +31,7 @@ export const Resume = () => {
     location: t("profile.location"),
     email: t("profile.email"),
     telephone: t("profile.telephone"),
-    image: "images/me.png",
+    image: "images/me.jpeg",
   };
 
   const aboutMe = {
@@ -40,20 +39,17 @@ export const Resume = () => {
     description: t('aboutMe.description')
   }
 
-  let technicalSkills = []
-  for (let i = 0; i < 7; i++ ) {
-    technicalSkills.push(t('skills.technicalSkills.' + i))
-  }
-  let otherSkills = []
-  for (let j = 0; j < 10; j++) {
-    otherSkills.push(t('skills.otherSkills.' + j))
-  }
-
-  const skills = {
-    technicalLabel: t('skills.technicalLabel'),
-    softLabel: t('skills.softLabel'),
-    technicalSkills: technicalSkills,
-    otherSkills: otherSkills
+  let skills = []
+  for (let j = 0; j < 5; j++) {
+    let nSkills = [4, 3, 2, 3, 2]
+    let items = []
+    for (let k = 0; k < nSkills[j]; k++) {
+      items.push(t('skills.' + j + '.item.' + k))
+    }
+    skills.push({
+      title: t('skills.' + j + '.title'),
+      items: items
+    })
   }
 
   let social = []
@@ -80,7 +76,9 @@ export const Resume = () => {
   let works = []
   for (let k = 0; k < 2; k++) {
     let description = []
-    for (let m = 0; m < 6; m++) {
+    let nDescription = [6, 4]
+
+    for (let m = 0; m < nDescription[k]; m++) {
       description.push(t('experience.works.' + k + '.description.' + m))
     }
     works.push({
@@ -92,12 +90,12 @@ export const Resume = () => {
   }
 
   let academic = []
-  for (let k = 0; k < 2; k++) {
+  for (let k = 0; k < 4; k++) {
     academic.push({
       career: t('experience.academic.' + k + '.career'),
       date: t('experience.academic.' + k + '.date'),
       institution: t('experience.academic.' + k + '.institution'),
-      description: t('experience.academic.' + k + '.description'),
+      // description: t('experience.academic.' + k + '.description'),
     })
   }
 
@@ -118,10 +116,10 @@ export const Resume = () => {
         <div className="resume" id="area-cv">
           <div className="resume__left">
             <Profile {...profile} socialMedia={socialMedia} />
-            <AboutMe {...aboutMe} />
-            <Skills {...skills} />
+            <Skills skills={skills} label={t('skills.label')}/>
           </div>
           <div className="resume__right">
+            <AboutMe {...aboutMe} />
             <Works {...experience} />
             <Academic {...experience} />
           </div>
